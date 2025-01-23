@@ -1,4 +1,4 @@
-* { /* todos os estilos vai para todos os elementos da pag */
+* { 
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
@@ -11,62 +11,60 @@ body {
 
 header {
     background-color: #ff9a6c;
-    display: flex; /*formato que exibe os elementos, FLEX: exibição flexivel */
-    align-items: center; /*alinhar no centro VERTICAL*/
-    justify-content: space-between; /*alinhar na HORIZONTAL*/
-    padding-left: 80px; /*espaçamento interior da direita*/
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding-left: 80px; 
     padding-right: 80px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 header a {
     color: #ffffff;
-    font-weight: 600; /*peso da fonte */
+    font-weight: 600; 
     padding: 32px; 
-    text-decoration: none; /*tirar o sublinhado*/
+    text-decoration: none; 
 } 
 
 #inicio {
    display: flex;
-   align-items: center; /*alinhar verticalmente*/
-   gap: 32px; /*ESPAÇAMENTO*/
-   padding: 24px 80px 128px 80px; /*topo, direita, baixo, esquerda*/
+   align-items: center;
+   gap: 32px; 
+   padding: 24px 80px 128px 80px; 
    position: relative ;
 }
 
 h1, h2 {
-   font-weight: 600; /*TEXTO EM NEGRITO*/
-   font-size: 32px; /*TAMANHO DA FONTE */
+   font-weight: 600;
+   font-size: 32px;
    margin-bottom: 32px;
 }
 
 .paragrafo {
-    line-height: 150%; /*altura de linha*/
+    line-height: 150%; 
     margin-bottom: 32px;  
 }
 
 .boton {
     background-color: #ff725e;
-    border-radius: 8px; /*borda arredondada*/
+    border-radius: 8px; 
     color: #ffffff;
-    /*vertical, horizontal*/
     padding: 16px 32px; 
-    text-decoration: none; /* tirar o sublinhado */
+    text-decoration: none;
 }
 
 .boton-transparente {
    background-color: transparent;
    color: #ff725e;
    padding: 16px 32px;
-   text-underline-offset: 4px; /*espasada no sublinhado*/ 
+   text-underline-offset: 4px; 
 }
 .absoluto {
-   position: absolute; /*posicionar o elemento de forma absoluta na pag*/
-   bottom: 0px; /*ficar no fundo*/
-   left: 0px; /*ficar na esquerda*/
-   width: 100px; /*largura = 100 = pag toda*/
-   z-index: -10px; /*posição de profundidade*/
-   /*se colocar uma valor negativo, fica no fundo/atras de tudo*/
+   position: absolute; 
+   bottom: 0px; 
+   left: 0px; 
+   width: 100px; 
+   z-index: -10px; 
 }
 
 #clinica {
@@ -77,13 +75,13 @@ h1, h2 {
 }
 
 #clinica li {
-  margin-bottom: 16px; /*margem em baixo*/
-  margin-left: 32px; /*margem a esquerda*/  
+  margin-bottom: 16px; 
+  margin-left: 32px;  
 }
 
 #farmacia {
     padding: 64px 80px;
-    text-align: center; /*alinhar o texto ao centro*/  
+    text-align: center; 
 }
 
 #farmacia img {
@@ -91,8 +89,8 @@ h1, h2 {
 }
 
 #farmacia .paragrafo {
-    max-width: 950px; /*largura máxima*/
-    margin: 0px auto; /*calcular automaticamente a margem da direita e esquerda*/
+    max-width: 950px; 
+    margin: 0px auto; 
 }
 
 #duvidas {
@@ -109,15 +107,15 @@ h1, h2 {
 
 .duvidas h3 {
    border: 2px solid #ff725e;
-   border-radius: 8px; /*borda arredondada*/
-   cursor: pointer; /*cursor do mouse / vira a maozinha, indicando resposta*/ 
+   border-radius: 8px; 
+   cursor: pointer; 
    padding: 24px;
 }
 
 .duvidas img {
     position: absolute;
-    top: 32px; /*distancia do topo*/
-    right: 24px; /*direita*/
+    top: 32px; 
+    right: 24px; 
 }
 
 .duvidas .paragrafo {
@@ -126,12 +124,11 @@ h1, h2 {
    border-left: 1px solid #ff725e;
    border-radius: 0 0 8px 8px;
    margin-top: -8px;
-   padding: 0 24px; /*VERTICAL, HORIZONTAL*/
-   height: 0; /*altura*/
-   opacity: 0; /*transparencia do elemento*/
-   /*HIDDEN = escondido*/
-   overflow: hidden; /*transbordamento de um elemento*/
-   transition: .2s; /*criar transições/ mudanças de estados dos elementos mais demoradas*/
+   padding: 0 24px; 
+   height: 0; 
+   opacity: 0; 
+   overflow: hidden; 
+   transition: .2s; 
 }
 
 .duvidas.ativa .paragrafo {
@@ -143,7 +140,7 @@ h1, h2 {
 footer {
    background-color: rgba( 255, 152, 108, 0.25); 
    display: flex;
-   justify-content: space-between; /*espaçamento entre os elementos*/
+   justify-content: space-between; 
    gap: 80px;
    padding: 64px 80px;
 }
@@ -151,13 +148,13 @@ footer {
 footer img,
 footer .titulo {
   display: block;
-  font-weight: 600; /*negrito*/
-  margin-bottom: 24px; /*margem em baixo*/
+  font-weight: 600;
+  margin-bottom: 24px; 
 }
 
 footer nav a {
    color: #263138;
-   display: block; /*quebra de linha*/
+   display: block; 
    margin-bottom: 16px;
    text-decoration: none;
 }
