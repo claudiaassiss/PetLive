@@ -7,8 +7,6 @@ elementosDuvidas.forEach(function(duvidas){
    })
 })
 
-//function nome(argumento){
-    //conteúdo da função
-//}
+
 
  
